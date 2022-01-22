@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a71d8ea14a.js" crossorigin="anonymous"></script>
+    <title>Uni Website</title>
+</head>
+<body>
+    <header>
+        <div class="sub-header">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="/index.html"><img src="./img/university logo.png" alt="uni logo"></a>
+                </div>
+                <div class="nav-link" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./course.html">Course</a></li>
+                        <li><a href="./bloge.html">Bloge</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"onclick="showmenu()" ></i>
+            </div>
+            <h1>Contact Us </h1>
+        </div>
+    </header>
+
+                   <!-- javascript code -->
+                   <!-- javascript code -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu(){
+            navlinks.style.right ="0";
+        }
+        function hidemenu(){
+            navlinks.style.right ="-200px";
+        }
+    </script>
+
+          
+           <!--contact us content -->
+        <!-- contact us content -->
+     
+       <section class="locataion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.4097575940364!2d73.07405831505648!3d33.64654314644789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952f7eb8b7ef%3A0xe9cc402cef39a80d!2sPMAS%20Arid%20Agriculture%20University%20Rawalpindi%20Rest%20House!5e0!3m2!1sen!2s!4v1641819592599!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </section>
+       <section class="contact">
+           <div class="row1">
+            <div class="contact-coulmn">
+                <div>
+                    <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>
+                            shamsabad Rawalpindi
+                        </h5>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-coulmn">
+                <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>
+                            +921234567890
+                        </h5>
+                        <p>Monday to Friday</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-coulmn">
+                <div>
+                    <i class="fa fa-envelope-o" ></i>
+                    <span>
+                        <h5>
+                            pmasaaur@gmail.com
+                        </h5>
+                        <p>email us for your query</p>
+                    </span>
+                </div>
+            </div>
+           <div class="contact-coulmn">
+            <form action="./farm-handler.php" method="post">
+                <input type="text" name="name" placeholder="enter your name" required>
+                <input type="email" name="email" placeholder="Enter email" required>
+                <input type="text" name="subject" placeholder="Enter subject" required>
+                <textarea  rows="8" name="message" placeholder="enter messege" required></textarea>
+                <button type="submit" class="submit-btn">send messege</button>
+            </form>
+        </div>
+        </div>
+       </section>
+
+        <!-- footer -->
+        <!-- footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus, ipsum obcaecati impedit fugit totam<br>Lorem ipsum dolor sit amet consectetur adipisicing.>p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>made with <i class="fa fa-heart" > by hamza akram</i></p>
+    </section>
+</body>
+</html>
